@@ -1,0 +1,321 @@
+:root { 
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  --main-background-color: #D8D8D8;
+  --card-background-color: #c8bec6;
+  --project-purple: #502F4C;
+  font-size: 14px;
+ 
+  }
+  
+h2 {
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: var(--project-purple);
+}
+
+.container {
+  min-width: 100%;
+  background: var(--main-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 40px;
+}
+
+.container .card {
+  height: 400px;
+  width: 70%;
+  background: var(--card-background-color);
+  border-radius: 40px;
+  border: 5px solid snow;
+  box-shadow: 5px 7px 10px black, 15px 15px 15px rgba(0, 0, 0, 0.699);
+  
+
+
+}
+
+
+
+#main {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+img {
+ margin-left: 50px;
+  height: 20rem;
+  width: auto;
+  border: 3px solid snow;
+  border-radius: 15px;
+}
+
+
+
+
+#main-photo {
+  flex-grow: 1;
+
+}
+
+#main-text {
+  flex-grow: 3;
+}
+
+#main-text h2 {
+  position: relative;
+ 
+  
+}
+
+#main-text h2::before {
+  content: '';
+  display: block;
+  transform: rotate(45deg);
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: -50px;
+  top: 1px;
+  background: white;
+  box-shadow: 3px 3px 10px snow, -3px -3px 10px snow;
+}
+
+#main-text p, #main-text a {
+  font-size: 1.3rem;
+}
+
+#main a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+  color: var(--link-color);
+}
+
+#me {
+  position: relative;
+  margin-top: 50px;
+}
+
+#me::before {
+content: 'Directed by Robert B. Weide';
+display: block;
+position: absolute;
+left: -30px;
+bottom: 0;
+height: 40px;
+width: 150px;
+font-size: 1.1rem;
+color: gold;
+font-weight: 700;
+text-overflow: inherit;
+background-color: rgba(0, 0, 0, 0.404);
+padding: 5px;
+border-radius: 10px;
+transform: scale(0);
+transition: 0.3s ease-out;
+
+}
+
+#me:hover::before {
+  transform: scale(1);
+  bottom: 100%;
+}
+
+
+#main a:hover {
+  color: snow;
+}
+
+#telegram::after {
+  content: url(https://img.icons8.com/ios-glyphs/30/null/telegram-app.png);
+}
+
+
+
+#github::after {
+content: url(https://img.icons8.com/ios-glyphs/30/null/github.png);
+}
+
+#goals {
+  text-align: center;
+}
+
+#goals ul {
+  font-size: 1.4rem;
+  list-style-type: none;
+}
+
+#goals ul {
+  padding-left: 0;
+}
+
+#goals ul li {
+
+  margin-bottom: 10px;
+  border-bottom: 2px solid snow;
+}
+
+#goals ul li:hover {
+  background: var(--project-purple);
+  color: snow;
+}
+
+
+
+#schedule, #learning {
+  display: block;
+  text-align: center;
+}
+
+
+
+
+
+#learning {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#learning table {
+  
+    margin: 0 auto;
+    width: 70%;
+  
+}
+
+#learning h3 {
+  text-align: center;
+}
+
+#learning tr {
+
+  font-size: 1.5rem;
+  
+}
+
+
+#learning p {
+
+  font-size: 1.5rem;
+  
+}
+
+
+
+tr:nth-child(even) {
+  background-color: #502F4C;
+  color: snow;
+}
+
+
+tr:nth-child(3) {
+  background-color: snow;
+  color: #502F4C;
+}
+
+
+@media (max-width:1200px) {
+
+  :root {
+    font-size: 10px;
+  }
+
+  img {
+    height: 18rem;
+  }
+  :root {
+    font-size: 12px;
+  }
+
+  #main-text h2::before {
+    
+    height: 20px;
+    width: 20px;
+   
+  }
+
+}
+
+@media (max-width:1100px) {
+
+  img {
+    height: 17rem;
+  }
+ 
+}
+
+@media (max-width:1000px) {
+
+  :root {
+    font-size: 10px;
+  }
+  #main-text h2::before {
+    
+    height: 15px;
+    width: 15px;
+   
+  }
+
+
+  img {
+    height: 16rem;
+  }
+
+
+}
+
+  
+
+
+@media (max-width:900px) {
+
+  :root {
+    font-size: 9px;
+  }
+
+  img {
+    height: 15rem;
+  }
+  
+
+
+}
+
+
+@media (max-width:800px) {
+
+img {
+  display: none;
+}
+
+
+.container {
+ gap: 0;
+}
+
+.container .card {
+  height: 300px;
+  
+  background: var(--card-background-color);
+  border-radius: 0;
+  border: 5px solid snow;
+  box-shadow: none;
+  
+
+
+}
+
+
+}
